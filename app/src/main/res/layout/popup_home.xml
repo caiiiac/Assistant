@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/allApps"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp"
+            android:text="  全部应用"
+            android:drawablePadding="6dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/text_color"
+            android:drawableStart="@drawable/ic_apps_black_24dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/widget"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp"
+            android:text="  小部件"
+            android:gravity="center_vertical"
+            android:drawablePadding="6dp"
+            android:layout_marginStart="10dp"
+            android:drawableTint="@color/text_color"
+            android:drawableStart="@drawable/ic_outline_widgets_24px"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/wallpaper"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp"
+            android:text="  壁纸"
+            android:drawablePadding="6dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/text_color"
+            android:drawableStart="@drawable/ic_outline_wallpaper_24px"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:text="  页面设置"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/text_color"
+            android:drawableStart="@drawable/ic_outline_settings_24px"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

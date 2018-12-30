@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMonitor"
+    tools:context=".fragment.MonitorFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp">
+
+                        <org.andcreator.assistant.view.UnclosedColorRingView
+                            android:id="@+id/cpuTemp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/cpuTempNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="26sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:text="CPU 温度"
+                        android:textColor="@color/text_color"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp">
+
+                        <org.andcreator.assistant.view.UnclosedColorRingView
+                            android:id="@+id/battery"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/batteryNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="26sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:text="电池温度"
+                        android:textColor="@color/text_color"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp">
+
+                        <org.andcreator.assistant.view.UnclosedColorRingView
+                            android:id="@+id/ram"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/ramNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="26sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:text="内存占用"
+                        android:textColor="@color/text_color"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp">
+
+                        <org.andcreator.assistant.view.UnclosedColorRingView
+                            android:id="@+id/cpuAverage"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/cpuAverageNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="26sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:text="CPU频率"
+                        android:textColor="@color/text_color"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="CPU频率曲线"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:showDividers="beginning"
+                android:stretchColumns="0,1,2,3">
+
+                <TableRow
+                    android:layout_marginTop="6dp"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:id="@+id/cpu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu1Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu1Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline1"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu1Message" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cpu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu2Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu2Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline2"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu2Message" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="6dp"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:id="@+id/cpu3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu3Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu3Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline3"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu3Message" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cpu4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu4Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu4Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu4Message" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="6dp"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:id="@+id/cpu5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu5Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu5Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline5"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu5Message" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cpu6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu6Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu6Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline6"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu6Message" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="6dp"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:id="@+id/cpu7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu7Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu7Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline7"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu7Message" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cpu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_span="2"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cpu8Message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/cpu8Usages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingBottom="6dp"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="12sp" />
+
+                        <org.andcreator.assistant.view.PolylineView
+                            android:id="@+id/polyline8"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_below="@+id/cpu8Message" />
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

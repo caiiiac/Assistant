@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/cardShadowColor_1" />
+            <corners android:radius="@dimen/cardRadius1"
+                     android:topLeftRadius="@dimen/cardRadius1"
+                     android:topRightRadius="@dimen/cardRadius1"
+                     android:bottomRightRadius="@dimen/cardRadius2"
+                     android:bottomLeftRadius="@dimen/cardRadius2" />
+            <padding
+                    android:bottom="@dimen/cardPadding1"
+                    android:left="@dimen/cardPadding1"
+                    android:top="@dimen/cardPadding1"
+                    android:right="@dimen/cardPadding1" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/cardShadowColor_2" />
+            <corners android:radius="@dimen/cardRadius1"
+                     android:topLeftRadius="@dimen/cardRadius1"
+                     android:topRightRadius="@dimen/cardRadius1"
+                     android:bottomRightRadius="@dimen/cardRadius2"
+                     android:bottomLeftRadius="@dimen/cardRadius2"/>
+            <padding
+                    android:bottom="@dimen/cardPadding2"
+                    android:left="@dimen/cardPadding2"
+                    android:top="@dimen/cardPadding2"
+                    android:right="@dimen/cardPadding2" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/cardShadowColor_3" />
+            <corners android:radius="@dimen/cardRadius1"
+                     android:topLeftRadius="@dimen/cardRadius1"
+                     android:topRightRadius="@dimen/cardRadius1"
+                     android:bottomRightRadius="@dimen/cardRadius2"
+                     android:bottomLeftRadius="@dimen/cardRadius2" />
+            <padding
+                    android:bottom="@dimen/cardPadding3"
+                    android:left="@dimen/cardPadding3"
+                    android:top="@dimen/cardPadding3"
+                    android:right="@dimen/cardPadding3" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/cardShadowColor_4" />
+            <corners android:radius="@dimen/cardRadius1"
+                     android:topLeftRadius="@dimen/cardRadius1"
+                     android:topRightRadius="@dimen/cardRadius1"
+                     android:bottomRightRadius="@dimen/cardRadius2"
+                     android:bottomLeftRadius="@dimen/cardRadius2" />
+            <padding
+                    android:bottom="@dimen/cardPadding4"
+                    android:left="@dimen/cardPadding4"
+                    android:top="@dimen/cardPadding4"
+                    android:right="@dimen/cardPadding4"/>
+        </shape>
+    </item>
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<solid android:color="@color/cardShadowColor_5" />-->
+            <!--<corners android:radius="@dimen/cardRadius1"-->
+                     <!--android:topLeftRadius="@dimen/cardRadius1"-->
+                     <!--android:topRightRadius="@dimen/cardRadius1"-->
+                     <!--android:bottomRightRadius="@dimen/cardRadius2"-->
+                     <!--android:bottomLeftRadius="@dimen/cardRadius2" />-->
+            <!--<padding-->
+                    <!--android:bottom="@dimen/cardPadding5"-->
+                    <!--android:left="@dimen/cardPadding5"-->
+                    <!--android:top="@dimen/cardPadding5"-->
+                    <!--android:right="@dimen/cardPadding5" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<solid android:color="@color/cardShadowColor_6" />-->
+            <!--<corners android:radius="@dimen/cardRadius1"-->
+                     <!--android:topLeftRadius="@dimen/cardRadius1"-->
+                     <!--android:topRightRadius="@dimen/cardRadius1"-->
+                     <!--android:bottomRightRadius="@dimen/cardRadius2"-->
+                     <!--android:bottomLeftRadius="@dimen/cardRadius2" />-->
+            <!--<padding-->
+                    <!--android:bottom="@dimen/cardPadding6"-->
+                    <!--android:left="@dimen/cardPadding6"-->
+                    <!--android:top="@dimen/cardPadding6"-->
+                    <!--android:right="@dimen/cardPadding6" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<solid android:color="@color/cardShadowColor_7" />-->
+            <!--<corners android:radius="@dimen/cardRadius1"-->
+                     <!--android:topLeftRadius="@dimen/cardRadius1"-->
+                     <!--android:topRightRadius="@dimen/cardRadius1"-->
+                     <!--android:bottomRightRadius="@dimen/cardRadius2"-->
+                     <!--android:bottomLeftRadius="@dimen/cardRadius2" />-->
+            <!--<padding-->
+                    <!--android:bottom="@dimen/cardPadding7"-->
+                    <!--android:left="@dimen/cardPadding7"-->
+                    <!--android:top="@dimen/cardPadding7"-->
+                    <!--android:right="@dimen/cardPadding7" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<solid android:color="@color/cardShadowColor_8" />-->
+            <!--<corners android:radius="@dimen/cardRadius1"-->
+                     <!--android:topLeftRadius="@dimen/cardRadius1"-->
+                     <!--android:topRightRadius="@dimen/cardRadius1"-->
+                     <!--android:bottomRightRadius="@dimen/cardRadius2"-->
+                     <!--android:bottomLeftRadius="@dimen/cardRadius2" />-->
+            <!--<padding-->
+                    <!--android:bottom="@dimen/cardPadding8"-->
+                    <!--android:left="@dimen/cardPadding8"-->
+                    <!--android:top="@dimen/cardPadding8"-->
+                    <!--android:right="@dimen/cardPadding8" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item>
+        <shape>
+            <!-- 填充的颜色 -->
+            <!--<gradient android:startColor="#ff5c6bc0"-->
+                <!--android:endColor="#ffe91e63"-->
+                <!--android:angle="135"/>-->
+            <solid android:color="@color/foreground" />
+            <!-- android:radius 圆角的半径 -->
+            <corners
+                    android:radius="16dp"
+                    android:topLeftRadius="8dp"
+                    android:topRightRadius="8dp"
+                    android:bottomRightRadius="30dp"
+                    android:bottomLeftRadius="30dp"/>
+        </shape>
+
+    </item>
+
+</layer-list>

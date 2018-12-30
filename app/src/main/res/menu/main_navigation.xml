@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/qr"
+        android:icon="@drawable/main_qr"
+        android:title="@string/title_qr" />
+
+    <item
+        android:id="@+id/music"
+        android:icon="@drawable/main_music"
+        android:title="@string/title_music" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/main_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/main_weather"
+        android:title="@string/title_weather" />
+
+    <item
+        android:id="@+id/monitor"
+        android:icon="@drawable/main_monitor"
+        android:title="@string/title_monitor" />
+
+</menu>

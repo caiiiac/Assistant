@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <org.andcreator.assistant.view.ColorMainCanvas
+                android:id="@+id/main_canvas"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <org.andcreator.assistant.view.ColorMainPicker
+                android:id="@+id/main_picker"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <org.andcreator.assistant.view.HueCanvas
+                android:id="@+id/hue_canvas"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp" />
+
+            <org.andcreator.assistant.view.HuePicker
+                android:id="@+id/hue_picker"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RingProgressView">
+        <attr name="ringColor" format="color"/> <!--同心圆的颜色-->
+        <attr name="ringProgressColor" format="color"/> <!--圆弧进度颜色-->
+        <attr name="ringWidth" format="dimension"/> <!--环宽-->
+        <attr name="currentProgress" format="integer"/> <!--当前进度-->
+        <attr name="maxProgress" format="integer"/> <!--最大进度-->
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollAlwaysEnabled" format="boolean"/>
+        <attr name="fastScrollThumbCurvatureEnabled" format="boolean"/>
+        <attr name="fastScrollThumbActiveColor" format="reference|color"/>
+        <attr name="fastScrollThumbInactiveColor" format="reference|color"/>
+        <attr name="fastScrollTrackColor" format="reference|color"/>
+        <attr name="fastScrollPopupBackgroundColor" format="reference|color"/>
+        <attr name="fastScrollPopupTextColor" format="reference|color"/>
+        <attr name="fastScrollHideDelay" format="integer"/>
+        <attr name="fastScrollTextSize" format="dimension"/>
+        <attr name="fastScrollPopupPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+</resources>

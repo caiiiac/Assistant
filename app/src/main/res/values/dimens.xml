@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="cardPadding1">1px</dimen>
+    <dimen name="cardPadding2">2px</dimen>
+    <dimen name="cardPadding3">3px</dimen>
+    <dimen name="cardPadding4">4px</dimen>
+    <dimen name="cardPadding5">5px</dimen>
+    <dimen name="cardPadding6">6px</dimen>
+    <dimen name="cardPadding7">7px</dimen>
+    <dimen name="cardPadding8">8px</dimen>
+    <dimen name="cardRadius1">10dp</dimen>
+    <dimen name="cardRadius2">32dp</dimen>
+
+    <!-- App Widget resize frame -->
+    <dimen name="default_widget_padding">8dp</dimen>
+    <dimen name="widget_handle_margin">22dp</dimen>
+    <dimen name="resize_frame_background_padding">16dp</dimen>
+
+    <dimen name="fastscroll_popup_default_padding">24dp</dimen>
+    <dimen name="fastscroll_popup_text_size">48dp</dimen>
+    <dimen name="fastscroll_thumb_min_width">0dp</dimen>
+    <dimen name="fastscroll_thumb_max_width">6dp</dimen>
+    <dimen name="fastscroll_thumb_height">72dp</dimen>
+    <dimen name="fastscroll_thumb_touch_inset">-24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

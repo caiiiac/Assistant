@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">即时启动</string>
+
+    <string name="music_skip_previous">上一曲</string>
+    <string name="music_pause">暂停</string>
+    <string name="music_play">播放</string>
+    <string name="music_skip_next">下一曲</string>
+
+    <string name="music_service_not_found">找不到音乐服务</string>
+
+    <string name="title_night_mode">夜间模式</string>
+    <string name="title_settings">设置</string>
+    <string name="all_apps">全部应用</string>
+
+        
+    <string name="select_browser">请选择浏览器</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="key_color_accent">KEY_COLOR_ACCENT</string>
+    <string name="key_color_primary">KEY_COLOR_PRIMARY</string>
+    <string name="key_color_primary_dark">KEY_COLOR_PRIMARY_DARK</string>
+    <string name="key_color_primary_light">KEY_COLOR_PRIMARY_LIGHT</string>
+    <string name="title_activity_city">CityActivity</string>
+
+    <string name="title_home">启动</string>
+    <string name="title_qr">功能</string>
+    <string name="title_music">音乐</string>
+    <string name="title_weather">天气</string>
+    <string name="title_monitor">设备</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PagerBottomSheet</string>
+    <string translatable="false" name="view_pager_bottom_sheet_behavior">org.andcreator.pagerbottomsheet.ViewPagerBottomSheetBehavior</string>
+</resources>

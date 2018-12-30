@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MusicFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@color/colorPrimaryLight"
+            app:contentScrim="@color/colorPrimaryLight"
+            app:layout_collapseParallaxMultiplier="0.8"  >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:layout_marginBottom="106dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/headImgCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardBackgroundColor="@color/colorAccent">
+
+                    <LinearLayout
+                        android:id="@+id/musicVolume"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|bottom"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <org.andcreator.assistant.view.VerticalSeekBarWrapper
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp">
+
+                                <org.andcreator.assistant.view.VerticalSeekBar
+                                    android:id="@+id/volumeLeft"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:splitTrack="false"
+                                    app:seekBarRotation="CW270"
+                                    android:max="100"
+                                    android:progress="100"
+                                    android:minHeight="4dp"
+                                    android:maxHeight="4dp"
+                                    android:progressDrawable="@drawable/seekbar_white_drawable"
+                                    android:thumb="@drawable/seekbar_white_circle"/>
+
+                            </org.andcreator.assistant.view.VerticalSeekBarWrapper>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="左耳"
+                                android:padding="8dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <org.andcreator.assistant.view.VerticalSeekBarWrapper
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp">
+
+                                <org.andcreator.assistant.view.VerticalSeekBar
+                                    android:id="@+id/volume"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:splitTrack="false"
+                                    app:seekBarRotation="CW270"
+                                    android:max="100"
+                                    android:progress="100"
+                                    android:minHeight="4dp"
+                                    android:maxHeight="4dp"
+                                    android:progressDrawable="@drawable/seekbar_white_drawable"
+                                    android:thumb="@drawable/seekbar_white_circle"/>
+
+                            </org.andcreator.assistant.view.VerticalSeekBarWrapper>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="音乐音量"
+                                android:padding="8dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <org.andcreator.assistant.view.VerticalSeekBarWrapper
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp">
+
+                                <org.andcreator.assistant.view.VerticalSeekBar
+                                    android:id="@+id/volumeRight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:splitTrack="false"
+                                    app:seekBarRotation="CW270"
+                                    android:max="100"
+                                    android:progress="100"
+                                    android:minHeight="4dp"
+                                    android:maxHeight="4dp"
+                                    android:progressDrawable="@drawable/seekbar_white_drawable"
+                                    android:thumb="@drawable/seekbar_white_circle"/>
+
+                            </org.andcreator.assistant.view.VerticalSeekBarWrapper>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="右耳"
+                                android:padding="8dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/musicCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/headImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/musicName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="26dp"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Play music"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:letterSpacing="0.06"
+                            android:shadowColor="@color/text_color"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.5"
+                            android:shadowRadius="2.0"/>
+
+                    </FrameLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <SeekBar
+                    android:id="@+id/musicProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headImgCrop"
+                    android:layout_marginTop="12dp"
+                    android:minHeight="8dp"
+                    android:maxHeight="8dp"
+                    android:max="1000"
+                    android:progressDrawable="@drawable/seekbar_progress_drawable"/>
+
+                <LinearLayout
+                    android:id="@+id/controlParent"
+                    android:layout_below="@+id/musicProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/loop"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_loop_trans_24dp"/>
+
+                    <ImageView
+                        android:id="@+id/skipPrevious"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_outline_skip_previous_24px"
+                        android:tint="@color/colorAccent"/>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/control"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="6dp"
+                            app:cardCornerRadius="32dp"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:layout_gravity="center"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:backgroundTint="?attr/colorAccent">
+
+                            <ImageView
+                                android:id="@+id/status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_play_arrow_24px"
+                                android:layout_gravity="center"
+                                android:tint="@color/foreground" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/skipNext"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_outline_skip_next_24px"
+                        android:tint="@color/colorAccent"/>
+
+                    <ImageView
+                        android:id="@+id/random"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_outline_shuffle_trans_24px"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                android:layout_gravity="bottom">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="28dp"
+                    app:cardCornerRadius="23dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:backgroundTint="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_gravity="center_vertical">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_music_note_black_24dp"
+                            android:drawableTint="?attr/colorAccent"
+                            android:hint=" 搜索音乐.."
+                            android:textSize="14sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_toStartOf="@+id/searchStart"/>
+
+                        <ImageView
+                            android:id="@+id/searchStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_search_black_24dp"
+                            android:tint="?colorAccent"
+                            android:padding="8dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <org.andcreator.assistant.view.FastScrollRecyclerView
+        android:id="@+id/musicList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        app:fastScrollHideDelay="600"
+        app:fastScrollAlwaysEnabled="false"
+        app:fastScrollPopupBackgroundColor="?attr/colorAccent"
+        app:fastScrollPopupTextColor="@color/white"
+        app:fastScrollThumbActiveColor="?attr/colorAccent"
+        app:fastScrollThumbInactiveColor="?attr/colorAccent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </org.andcreator.assistant.view.FastScrollRecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:id="@+id/remove"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="19dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="136dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="  移除"
+        android:drawablePadding="6dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:drawableTint="@color/text_color"
+        android:drawableStart="@drawable/ic_close_black_24dp"/>
+
+</android.support.v7.widget.CardView>

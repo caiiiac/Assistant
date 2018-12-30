@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8198b9</color>
+    <color name="colorPrimaryDark">#62757f</color>
+    <color name="colorAccent">#3d7af3</color>
+    <color name="colorAccented">#8c3377</color>
+    <color name="transColorAccent">#cc3d7af3</color>
+    <color name="transAccent">#883d7af3</color>
+    <color name="colorPrimaryLight">#F5F5F5</color>
+    <color name="background">#f2f4f7</color>
+    <color name="backgroundMonitor">#eeeeee</color>
+    <color name="foreground">#ffffffff</color>
+    <color name="text_music">#484848</color>
+    <color name="trans_background">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="card_stroke">#dadce0</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black_text">#222222</color>
+    <color name="text_color">#666666</color>
+    <color name="cardBodyColor">#FFFFFF</color>
+    <color name="cardShadowColor_1">#00000000</color>
+    <color name="cardShadowColor_2">#03000000</color>
+    <color name="cardShadowColor_3">#06000000</color>
+    <color name="cardShadowColor_4">#09000000</color>
+    <color name="cardShadowColor_5">#0a000000</color>
+    <color name="cardShadowColor_6">#0d000000</color>
+    <color name="cardShadowColor_7">#0f000000</color>
+    <color name="cardShadowColor_8">#1c000000</color>
+
+    <color name="fastscroll_thumb_inactive_color">#009688</color>
+    <color name="fastscroll_thumb_active_color">#009688</color>
+</resources>
